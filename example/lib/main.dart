@@ -23,7 +23,7 @@ class _MyAppState extends State<MyApp> {
   // Platform messages are asynchronous, so we initialize in an async method.
   Future<void> openWithScheme(String scheme) async {
     try {
-      await Flscheme.launchScheme(scheme: scheme, packageName: 'com.linkedin.android');
+      await FlScheme.launchScheme(scheme: scheme, packageName: 'com.linkedin.android');
     } catch (e) {
       print(e.toString());
     }
